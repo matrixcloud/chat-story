@@ -1,0 +1,120 @@
+.App {
+  background: #f2f2f2;
+  max-width: 400px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.chatList {
+  list-style: none;
+  flex: 4 1 0%;
+  padding: 10px;
+  overflow-y: scroll;
+  font-size: 14px;
+  height: 70vh;
+}
+
+.narrator {
+  display: flex;
+  justify-content: center;
+}
+
+.narrator p {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 3px;
+  max-width: 200px;
+  background-color: #aaa;
+  color: #fff;
+  word-break: break-all;
+}
+
+
+/* role styles */
+.role {
+  display: flex;
+  margin-top: 10px;
+}
+
+.role.left {
+
+}
+
+.role.right {
+  flex-direction: row-reverse;
+}
+
+.roleName {
+
+}
+
+.roleName.right {
+  text-align: right;
+}
+
+.roleMessage {
+  position: relative;
+  border-radius: 3px;
+  max-width: 200px;
+  word-break: break-all;
+  margin-top: -12px;
+}
+
+.roleMessage p {
+  padding: 5px;
+}
+
+.roleMessage.left {
+  background-color: #fff;
+  color: #4990e2;
+}
+
+.roleMessage.right {
+  background-color: #4990e2;
+  color: #fff;
+}
+
+.roleMain {
+  margin: 0 5px;
+}
+
+.arrow {
+  position: absolute;
+}
+
+.arrow.left {
+  color: #fff;
+  left: -6px;
+  top: 0;
+}
+
+.arrow.right {
+  color: #4990e2;
+  right: -6px;
+  top: 0;
+}
+
+.avatar img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* bottom pad */
+.bottomPad {
+  display: flex;
+  border-top: 1px solid #ccc;
+  align-items: center;
+  height: 200px;
+  color: #aaa;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.star {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
