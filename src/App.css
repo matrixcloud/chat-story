@@ -5,6 +5,21 @@
   height: 100vh;
 }
 
+.appreciates {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.appreciates img {
+  width: 300px;
+  box-shadow: 1px 1px 1px 2px #ddd;
+}
+
+.appreciates p {
+  font-size: 16px;
+  color: #555;
+}
+
 .chatList {
   list-style: none;
   flex: 4 1 0%;
